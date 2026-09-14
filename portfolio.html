@@ -8,8 +8,9 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-<link rel="stylesheet" href="styles.css">
-
+<link id="style-sheet" rel="stylesheet" href="light.css">
+<script src="functions.js"></script>
+<button id="style-toggle" class="toggle-button" onclick="toggleStyle()">Switch to Dark</button>
 <style>
 
 
@@ -106,17 +107,12 @@
 }
 
 
-/* GitHub logo */
 
 .github-logo {
     width: 28px;
     height: 28px;
 }
 
-
-/* ============================= */
-/* RECOMMENDATIONS               */
-/* ============================= */
 
 .recommendations-section {
     width: 100%;
@@ -548,9 +544,6 @@
 </div>
 
 
-<!-- ============================= -->
-<!-- NAVIGATION                    -->
-<!-- ============================= -->
 
 <nav class="site-nav">
 
@@ -578,7 +571,9 @@
 ```
 
 </div>
-
+<script>
+    loadStyle();
+    </script>
 </body>
 
 </html>

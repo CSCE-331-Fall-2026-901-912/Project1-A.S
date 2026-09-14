@@ -3,8 +3,9 @@
 <head>
 <title>Aparna Subramaniam</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="styles.css">
-
+<link id="style-sheet" rel="stylesheet" href="light.css">
+<script src="functions.js"></script>
+<button id="style-toggle" class="toggle-button" onclick="toggleStyle()">Switch to Dark</button>
 <style>
 .landing-layout {
   display: grid;
@@ -191,6 +192,8 @@
   </nav>
 
 </div>
-
+<script>
+  loadStyle();
+  </script>
 </body>
 </html>
