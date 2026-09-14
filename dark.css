@@ -1,0 +1,244 @@
+:root {
+    --color-dark: #F4F1EE;
+    --color-navy: #D9AA90;
+    --color-cream: #0B1020;
+    --color-tan: #1A2235;
+    --color-rust: #B11226;
+  }
+  
+  body {
+    background-color: #0B1020;
+    color: #F4F1EE;
+  }
+  
+  .container,
+  .qualifications-container {
+    color: #F4F1EE;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    color: #F4F1EE;
+  }
+  
+  h1,
+  h2 {
+    color: #D9AA90;
+  }
+  
+  .button,
+  .site-nav a,
+  .explorer-button {
+    background-color: #D9AA90;
+    color: #0B1020;
+  }
+  
+  .button:hover,
+  .site-nav a:hover,
+  .explorer-button:hover {
+    background-color: #B11226;
+    color: #ffffff;
+  }
+  
+  .site-nav {
+    background-color: transparent;
+  }
+  
+  .info-box {
+    border-color: #D9AA90;
+    background-color: #12192B;
+  }
+  
+  .resume-preview {
+    background-color: transparent;
+  }
+  
+  .resume-preview img {
+    border-color: #D9AA90;
+  }
+  
+  .qualifications-title {
+    color: #D9AA90;
+  }
+  
+  .resume-section h2,
+  .skills-section h2,
+  .interests-section h2,
+  .certifications-section h2,
+  .awards-section h2 {
+    color: #D9AA90;
+  }
+  
+  .skill-box {
+    background-color: #12192B;
+    border-color: #D9AA90;
+  }
+  
+  .skill-box li {
+    color: #F4F1EE;
+  }
+  
+  .interests-section {
+    background-color: #1A2235;
+    border-left-color: #B11226;
+  }
+  
+  .interests-section h2 {
+    color: #F4F1EE;
+  }
+  
+  .interest-card {
+    background-color: #12192B;
+    border-color: #D9AA90;
+  }
+  
+  .interest-card h3 {
+    color: #D9AA90;
+  }
+  
+  .interest-card p {
+    color: #F4F1EE;
+  }
+  
+  .certifications-section,
+  .awards-section {
+    background-color: #12192B;
+    border-color: #D9AA90;
+  }
+  
+  .star {
+    background-color: #B11226;
+    color: #ffffff;
+  }
+  
+  .award p {
+    color: #D9AA90;
+  }
+  
+  .sandbox-header h2 {
+    color: #D9AA90;
+  }
+  
+  .sandbox-card {
+    background-color: #12192B;
+    border-color: #D9AA90;
+  }
+  
+  .sandbox-card h3 {
+    color: #D9AA90;
+  }
+  
+  .explorer-result {
+    background-color: #1A2235;
+    border-left-color: #B11226;
+  }
+  
+  .workflow-step {
+    background-color: #1A2235;
+    border-color: #D9AA90;
+  }
+  
+  .workflow-step strong {
+    color: #D9AA90;
+  }
+  
+  .thought-experiment {
+    background-color: #D9AA90;
+    color: #0B1020;
+  }
+  
+  .thought-experiment h3 {
+    color: #0B1020;
+  }
+  
+  .scenario {
+    background-color: #12192B;
+    color: #F4F1EE;
+  }
+  
+  .scenario button {
+    background-color: #B11226;
+  }
+  
+  .scenario button:hover {
+    background-color: #D9AA90;
+    color: #0B1020;
+  }
+  
+  .scenario-result {
+    background-color: #1A2235;
+    color: #F4F1EE;
+  }
+  
+  .reflection {
+    background-color: #1A2235;
+    border-color: #B11226;
+  }
+  
+  .reflection h3 {
+    color: #D9AA90;
+  }
+  
+  .toggle-button {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.65rem 1.25rem;
+    background-color: #D9AA90;
+    color: #0B1020;
+    border: 2px solid #D9AA90;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: #B11226;
+    border-color: #B11226;
+    color: #ffffff;
+  }
+  
+  .social-button {
+    background-color: #12192B;
+    color: #D9AA90;
+    border-color: #D9AA90;
+  }
+  
+  .social-button:hover {
+    background-color: #B11226;
+    color: #ffffff;
+  }
+  
+  .project-card,
+  .project-tile,
+  .recommendations-section {
+    background-color: #12192B;
+    border-color: #D9AA90;
+  }
+  
+  .project-card h3,
+  .project-tile h3 {
+    color: #D9AA90;
+  }
+  
+  .project-card p,
+  .project-tile p {
+    color: #F4F1EE;
+  }
+  
+  input,
+  textarea {
+    background-color: #12192B;
+    color: #F4F1EE;
+    border: 2px solid #D9AA90;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #BFC4CE;
+  }
