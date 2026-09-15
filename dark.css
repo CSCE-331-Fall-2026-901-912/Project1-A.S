@@ -1,244 +1,221 @@
 :root {
-    --color-dark: #F4F1EE;
-    --color-navy: #D9AA90;
-    --color-cream: #0B1020;
-    --color-tan: #1A2235;
-    --color-rust: #B11226;
-  }
-  
-  body {
-    background-color: #0B1020;
-    color: #F4F1EE;
-  }
-  
-  .container,
-  .qualifications-container {
-    color: #F4F1EE;
-  }
-  
-  h1,
-  h2,
-  h3,
-  p,
-  li {
-    color: #F4F1EE;
-  }
-  
-  h1,
-  h2 {
-    color: #D9AA90;
-  }
-  
-  .button,
-  .site-nav a,
-  .explorer-button {
-    background-color: #D9AA90;
-    color: #0B1020;
-  }
-  
-  .button:hover,
-  .site-nav a:hover,
-  .explorer-button:hover {
-    background-color: #B11226;
-    color: #ffffff;
-  }
-  
-  .site-nav {
-    background-color: transparent;
-  }
-  
-  .info-box {
-    border-color: #D9AA90;
-    background-color: #12192B;
-  }
-  
-  .resume-preview {
-    background-color: transparent;
-  }
-  
-  .resume-preview img {
-    border-color: #D9AA90;
-  }
-  
-  .qualifications-title {
-    color: #D9AA90;
-  }
-  
-  .resume-section h2,
-  .skills-section h2,
-  .interests-section h2,
-  .certifications-section h2,
-  .awards-section h2 {
-    color: #D9AA90;
-  }
-  
-  .skill-box {
-    background-color: #12192B;
-    border-color: #D9AA90;
-  }
-  
-  .skill-box li {
-    color: #F4F1EE;
-  }
-  
-  .interests-section {
-    background-color: #1A2235;
-    border-left-color: #B11226;
-  }
-  
-  .interests-section h2 {
-    color: #F4F1EE;
-  }
-  
-  .interest-card {
-    background-color: #12192B;
-    border-color: #D9AA90;
-  }
-  
-  .interest-card h3 {
-    color: #D9AA90;
-  }
-  
-  .interest-card p {
-    color: #F4F1EE;
-  }
-  
-  .certifications-section,
-  .awards-section {
-    background-color: #12192B;
-    border-color: #D9AA90;
-  }
-  
-  .star {
-    background-color: #B11226;
-    color: #ffffff;
-  }
-  
-  .award p {
-    color: #D9AA90;
-  }
-  
-  .sandbox-header h2 {
-    color: #D9AA90;
-  }
-  
-  .sandbox-card {
-    background-color: #12192B;
-    border-color: #D9AA90;
-  }
-  
-  .sandbox-card h3 {
-    color: #D9AA90;
-  }
-  
-  .explorer-result {
-    background-color: #1A2235;
-    border-left-color: #B11226;
-  }
-  
-  .workflow-step {
-    background-color: #1A2235;
-    border-color: #D9AA90;
-  }
-  
-  .workflow-step strong {
-    color: #D9AA90;
-  }
-  
-  .thought-experiment {
-    background-color: #D9AA90;
-    color: #0B1020;
-  }
-  
-  .thought-experiment h3 {
-    color: #0B1020;
-  }
-  
-  .scenario {
-    background-color: #12192B;
-    color: #F4F1EE;
-  }
-  
-  .scenario button {
-    background-color: #B11226;
-  }
-  
-  .scenario button:hover {
-    background-color: #D9AA90;
-    color: #0B1020;
-  }
-  
-  .scenario-result {
-    background-color: #1A2235;
-    color: #F4F1EE;
-  }
-  
-  .reflection {
-    background-color: #1A2235;
-    border-color: #B11226;
-  }
-  
-  .reflection h3 {
-    color: #D9AA90;
-  }
-  
-  .toggle-button {
-    display: block;
-    margin: 1rem auto 0;
-    padding: 0.65rem 1.25rem;
-    background-color: #D9AA90;
-    color: #0B1020;
-    border: 2px solid #D9AA90;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 0.95rem;
-    transition: all 0.2s ease;
-  }
-  
-  .toggle-button:hover {
-    background-color: #B11226;
-    border-color: #B11226;
-    color: #ffffff;
-  }
-  
-  .social-button {
-    background-color: #12192B;
-    color: #D9AA90;
-    border-color: #D9AA90;
-  }
-  
-  .social-button:hover {
-    background-color: #B11226;
-    color: #ffffff;
-  }
-  
-  .project-card,
-  .project-tile,
-  .recommendations-section {
-    background-color: #12192B;
-    border-color: #D9AA90;
-  }
-  
-  .project-card h3,
-  .project-tile h3 {
-    color: #D9AA90;
-  }
-  
-  .project-card p,
-  .project-tile p {
-    color: #F4F1EE;
-  }
-  
-  input,
-  textarea {
-    background-color: #12192B;
-    color: #F4F1EE;
-    border: 2px solid #D9AA90;
-  }
-  
-  input::placeholder,
-  textarea::placeholder {
-    color: #BFC4CE;
-  }
+  --color-dark: #02000D;
+  --color-navy: #07203F;
+  --color-cream: #EBDED4;
+  --color-tan: #D9AA90;
+  --color-rust: #800000;
+}
+
+body {
+  background-color: #02000D;
+  color: #EBDED4;
+}
+
+.container {
+  background-color: #02000D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #EBDED4;
+}
+
+a {
+  color: #D9AA90;
+}
+
+a:hover {
+  color: #EBDED4;
+}
+
+/* Navigation */
+
+.site-nav {
+  background-color: #02000D;
+}
+
+.site-nav a {
+  background-color: #07203F;
+  color: #EBDED4;
+  border: 1px solid #D9AA90;
+}
+
+.site-nav a:hover {
+  background-color: #800000;
+  color: #FFFFFF;
+}
+
+/* Regular buttons */
+
+.button {
+  background-color: #07203F;
+  color: #EBDED4;
+  border: 1px solid #D9AA90;
+}
+
+.button:hover {
+  background-color: #800000;
+  color: #FFFFFF;
+}
+
+/* Style toggle */
+
+.toggle-button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.65rem 1.25rem;
+  background-color: #D9AA90;
+  color: #07203F;
+  border: 2px solid #D9AA90;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.toggle-button:hover {
+  background-color: #800000;
+  border-color: #D9AA90;
+  color: #FFFFFF;
+}
+
+/* Information boxes */
+
+.info-box {
+  background-color: #D9AA90;
+  color: #07203F;
+  border: 2px solid #D9AA90;
+}
+
+.info-box p,
+.info-box li,
+.info-box span {
+  color: #07203F;
+}
+
+/* Resume */
+
+.resume-preview {
+  background-color: #07203F;
+}
+
+.resume-preview img {
+  border: 1px solid #D9AA90;
+}
+
+/* White cards and boxes become tan */
+
+.skill-box,
+.skills-box,
+.card,
+.project-card,
+.activity-card,
+.certification-card,
+.award-card,
+.interest-card {
+  background-color: #D9AA90 !important;
+  color: #07203F !important;
+  border-color: #D9AA90 !important;
+}
+
+/* Navy text inside tan boxes */
+
+.skill-box *,
+.skills-box *,
+.card *,
+.project-card *,
+.activity-card *,
+.certification-card *,
+.award-card *,
+.interest-card * {
+  color: #07203F !important;
+}
+
+/* Star icons */
+
+.star {
+  background-color: #800000 !important;
+  color: #EBDED4 !important;
+}
+
+.star span {
+  color: #EBDED4 !important;
+}
+
+/* Forms */
+
+form {
+  background-color: #07203F;
+  color: #EBDED4;
+}
+
+input,
+textarea {
+  background-color: #EBDED4;
+  color: #07203F;
+  border: 1px solid #D9AA90;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #07203F;
+}
+
+/* Headings inside dark sections */
+
+section h1,
+section h2,
+section h3,
+section h4 {
+  color: #D9AA90;
+}
+
+/* Dark sections */
+
+.dark-section {
+  background-color: #02000D;
+  color: #EBDED4;
+}
+
+.dark-section p,
+.dark-section li {
+  color: #EBDED4;
+}
+
+/* Hobbies / oval sections */
+
+.hobbies,
+.hobbies-container,
+.career-goals {
+  background-color: #07203F !important;
+  color: #EBDED4 !important;
+  border-color: #D9AA90 !important;
+}
+
+.hobbies *,
+.hobbies-container *,
+.career-goals * {
+  color: #EBDED4 !important;
+}
+
+/* Project areas */
+
+.project,
+.project-box {
+  background-color: #D9AA90 !important;
+  color: #07203F !important;
+  border-color: #D9AA90 !important;
+}
+
+.project *,
+.project-box * {
+  color: #07203F !important;
+}
