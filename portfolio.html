@@ -4,15 +4,25 @@
 
 <head>
 
-<title>Portfolio</title>
-
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link id="style-sheet" rel="stylesheet" href="light.css">
 <script src="functions.js"></script>
 <button id="style-toggle" class="toggle-button" onclick="toggleStyle()">Switch to Dark</button>
+
 <style>
 
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.portfolio-title {
+    color: #FFFFFF !important;
+}
 
 .project-row {
     display: flex;
@@ -64,7 +74,6 @@
     text-align: left;
 }
 
-
 .contact-row {
     display: flex;
     width: 100%;
@@ -106,13 +115,10 @@
     font-weight: bold;
 }
 
-
-
 .github-logo {
     width: 28px;
     height: 28px;
 }
-
 
 .recommendations-section {
     width: 100%;
@@ -169,7 +175,7 @@
     padding: 9px;
     margin-bottom: 15px;
     border: 1px solid #D9AA90;
-    font-family: inherit;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #07203F;
     background-color: #FFFFFF;
 }
@@ -194,8 +200,6 @@
     background-color: #800000;
 }
 
-
-
 .linkedin-recommendation {
     padding: 15px;
     border-left: 4px solid #800000;
@@ -213,8 +217,6 @@
     color: #07203F;
     line-height: 1.5;
 }
-
-
 
 @media (max-width: 700px) {
 
@@ -250,10 +252,7 @@
 
 </head>
 
-<body>
-
 <div class="container">
-
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
@@ -261,10 +260,8 @@
 
         <td align="center">
 
-            <h2>
-                <font color="#07203F">
-                    Portfolio
-                </font>
+            <h2 class="portfolio-title">
+                Portfolio
             </h2>
 
         </td>
@@ -272,8 +269,6 @@
     </tr>
 
 </table>
-
-
 
 <h3 style="
     text-align: center;
@@ -283,11 +278,7 @@
     Personal Projects
 </h3>
 
-
 <div class="project-row">
-
-
-  
 
     <div class="project-tile">
 
@@ -312,9 +303,6 @@
 
     </div>
 
-
-
-
     <div class="project-tile">
 
         <a
@@ -336,9 +324,6 @@
 
     </div>
 
-
-  
-
     <div class="project-tile">
 
         <a
@@ -359,13 +344,9 @@
 
     </div>
 
-
 </div>
 
-
 <div class="contact-row">
-
-
 
     <a
         href="https://github.com/Aparna0208"
@@ -401,7 +382,6 @@
 
     </a>
 
-
     <a
         href="https://www.linkedin.com/in/aparna-subramaniam-/"
         target="_blank"
@@ -417,9 +397,6 @@
 
     </a>
 
-
-    <!-- Email -->
-
     <a
         href="mailto:saparna06@gmail.com"
         class="contact-button"
@@ -434,9 +411,7 @@
 
     </a>
 
-
 </div>
-
 
 <div class="recommendations-section">
 
@@ -444,10 +419,7 @@
         Recommendations
     </h3>
 
-
     <div class="recommendations-row">
-
-
 
         <div class="recommendation-form">
 
@@ -468,7 +440,6 @@
                     placeholder="Your name"
                 >
 
-
                 <label for="recommendation-role">
                     Affiliation / Role
                 </label>
@@ -480,7 +451,6 @@
                     placeholder="Your role or organization"
                 >
 
-
                 <label for="recommendation-message">
                     Recommendation
                 </label>
@@ -490,7 +460,6 @@
                     name="recommendation-message"
                     placeholder="Write a recommendation..."
                 ></textarea>
-
 
                 <button
                     type="submit"
@@ -503,19 +472,15 @@
 
         </div>
 
-
         <div class="recommendation-display">
 
             <div class="recommendation-subtitle">
                 LinkedIn Recommendations
             </div>
 
-
-
             <div class="linkedin-recommendation">
 
                 <div class="linkedin-recommendation-name">
-                    
                 </div>
 
                 <div class="linkedin-recommendation-text">
@@ -527,7 +492,6 @@
 
             </div>
 
-
             <a
                 href="https://www.linkedin.com/in/aparna-subramaniam-/"
                 target="_blank"
@@ -538,12 +502,9 @@
 
         </div>
 
-
     </div>
 
 </div>
-
-
 
 <nav class="site-nav">
 
@@ -568,12 +529,11 @@
     </a>
 
 </nav>
-```
 
 </div>
+
 <script>
     loadStyle();
-    </script>
-</body>
+</script>
 
 </html>

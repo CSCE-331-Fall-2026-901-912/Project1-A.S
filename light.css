@@ -15,10 +15,8 @@
 }
 
 body {
-  font-family: 'Open Sans', Calibri, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   line-height: 1.5;
-  color: var(--color-navy);
-  background-color: var(--color-cream);
 }
 
 .container {
@@ -140,4 +138,24 @@ p  { font-size: 1rem; }
   .container {
     padding: 0 2rem;
   }
+}
+.toggle-button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.65rem 1.25rem;
+  background-color: #07203F;
+  color: #EBDED4;
+  border: 2px solid #07203F;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.toggle-button:hover {
+  background-color: #800000;
+  border-color: #800000;
+  color: #ffffff;
 }

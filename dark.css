@@ -10,7 +10,11 @@ body {
   background-color: #02000D;
   color: #EBDED4;
 }
-
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #02000D;
+  color: #EBDED4;
+}
 .container {
   background-color: #02000D;
 }
@@ -34,7 +38,6 @@ a:hover {
   color: #EBDED4;
 }
 
-/* Navigation */
 
 .site-nav {
   background-color: #02000D;
@@ -51,7 +54,6 @@ a:hover {
   color: #FFFFFF;
 }
 
-/* Regular buttons */
 
 .button {
   background-color: #07203F;
@@ -64,7 +66,6 @@ a:hover {
   color: #FFFFFF;
 }
 
-/* Style toggle */
 
 .toggle-button {
   display: block;
@@ -87,8 +88,6 @@ a:hover {
   color: #FFFFFF;
 }
 
-/* Information boxes */
-
 .info-box {
   background-color: #D9AA90;
   color: #07203F;
@@ -101,7 +100,6 @@ a:hover {
   color: #07203F;
 }
 
-/* Resume */
 
 .resume-preview {
   background-color: #07203F;
@@ -111,7 +109,6 @@ a:hover {
   border: 1px solid #D9AA90;
 }
 
-/* White cards and boxes become tan */
 
 .skill-box,
 .skills-box,
@@ -126,7 +123,6 @@ a:hover {
   border-color: #D9AA90 !important;
 }
 
-/* Navy text inside tan boxes */
 
 .skill-box *,
 .skills-box *,
@@ -139,7 +135,6 @@ a:hover {
   color: #07203F !important;
 }
 
-/* Star icons */
 
 .star {
   background-color: #800000 !important;
@@ -150,7 +145,6 @@ a:hover {
   color: #EBDED4 !important;
 }
 
-/* Forms */
 
 form {
   background-color: #07203F;
@@ -169,7 +163,6 @@ textarea::placeholder {
   color: #07203F;
 }
 
-/* Headings inside dark sections */
 
 section h1,
 section h2,
@@ -178,7 +171,6 @@ section h4 {
   color: #D9AA90;
 }
 
-/* Dark sections */
 
 .dark-section {
   background-color: #02000D;
@@ -190,7 +182,6 @@ section h4 {
   color: #EBDED4;
 }
 
-/* Hobbies / oval sections */
 
 .hobbies,
 .hobbies-container,
@@ -205,8 +196,6 @@ section h4 {
 .career-goals * {
   color: #EBDED4 !important;
 }
-
-/* Project areas */
 
 .project,
 .project-box {
