@@ -1,9 +1,405 @@
-body {
-  background-color: #02000D;
-  color: #FFFFFF;
+:root {
+  --color-dark: #FFFFFF;
+  --color-navy: #D9AA90;
+  --color-cream: #07203F;
+  --color-tan: #0B2C52;
+  --color-rust: #E8A87C;
 }
 
-/* Main Page */
+body {
+  background-color: #02000D !important;
+  color: #FFFFFF !important;
+}
+
+.toggle-button {
+  background-color: #800000 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #D9AA90 !important;
+  border-radius: 0 !important;
+}
+
+.toggle-button:hover {
+  background-color: #D9AA90 !important;
+  color: #02000D !important;
+}
+
+.home-page {
+  display: grid !important;
+  grid-template-columns: 320px 1fr !important;
+  grid-template-areas:
+    "title title"
+    "photo resume"
+    "photo bio"
+    "roles highlights"
+    "nav nav" !important;
+  gap: 2rem !important;
+  align-items: start !important;
+  max-width: 1200px !important;
+  background-color: #02000D !important;
+  padding: 0 2rem !important;
+}
+
+.home-title {
+  grid-area: title !important;
+  margin: 0 0 1rem 0 !important;
+  text-align: left !important;
+  color: #FFFFFF !important;
+  border-left: 8px solid #D9AA90 !important;
+  padding-left: 1.5rem !important;
+}
+
+.home-layout {
+  display: contents !important;
+}
+
+.home-left {
+  grid-area: photo !important;
+}
+
+.home-left img {
+  height: 100% !important;
+  object-fit: cover !important;
+  border: 3px solid #D9AA90 !important;
+}
+
+.home-right {
+  display: contents !important;
+}
+
+.home-right img {
+  grid-area: resume !important;
+}
+
+.bio-text {
+  grid-area: bio !important;
+  color: #D9AA90 !important;
+}
+
+.previous-roles {
+  grid-area: roles !important;
+  margin-top: 0 !important;
+  background-color: #07203F !important;
+  border: none !important;
+  border-top: 8px solid #800000 !important;
+}
+
+.portfolio-highlights {
+  grid-area: highlights !important;
+  margin-top: 0 !important;
+  background-color: #07203F !important;
+  border: none !important;
+  border-top: 8px solid #800000 !important;
+}
+
+.previous-roles h2,
+.portfolio-highlights h2 {
+  color: #D9AA90 !important;
+}
+
+.previous-roles li {
+  color: #FFFFFF !important;
+}
+
+.portfolio-highlights p {
+  color: #FFFFFF !important;
+}
+
+.portfolio-highlights strong {
+  color: #D9AA90 !important;
+}
+
+.home-nav {
+  grid-area: nav !important;
+  border-top: 2px solid #07203F !important;
+  padding-top: 2rem !important;
+}
+
+.home-nav a {
+  background-color: #800000 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #D9AA90 !important;
+}
+
+.home-nav a:hover {
+  background-color: #D9AA90 !important;
+  border-color: #D9AA90 !important;
+  color: #02000D !important;
+}
+
+.portfolio-page {
+  display: grid !important;
+  grid-template-columns: 1fr 320px !important;
+  grid-template-areas:
+    "title title"
+    "recommend social"
+    "projects projects"
+    "nav nav" !important;
+  gap: 2rem !important;
+  align-items: start !important;
+  max-width: 1200px !important;
+  background-color: #02000D !important;
+  padding: 0 2rem !important;
+}
+
+.portfolio-title {
+  grid-area: title !important;
+  text-align: left !important;
+  margin: 0 0 1rem 0 !important;
+  color: #FFFFFF !important;
+  border-left: 8px solid #D9AA90 !important;
+  padding-left: 1.5rem !important;
+}
+
+.projects-section {
+  grid-area: projects !important;
+}
+
+.projects-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem !important;
+}
+
+.project-card:first-child {
+  grid-column: span 2 !important;
+}
+
+.project-card {
+  background-color: #07203F !important;
+  border: none !important;
+  border-top: 6px solid #800000 !important;
+}
+
+.project-card h3 {
+  color: #D9AA90 !important;
+}
+
+.project-card p {
+  color: #FFFFFF !important;
+}
+
+.project-button {
+  background-color: #800000 !important;
+  color: #FFFFFF !important;
+}
+
+.project-button:hover {
+  background-color: #D9AA90 !important;
+  color: #02000D !important;
+}
+
+.social-section {
+  grid-area: social !important;
+  margin-top: 0 !important;
+}
+
+.social-buttons {
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.social-buttons a {
+  text-align: center !important;
+  background-color: #800000 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #D9AA90 !important;
+}
+
+.social-buttons a:hover {
+  background-color: #D9AA90 !important;
+  border-color: #D9AA90 !important;
+  color: #02000D !important;
+}
+
+.recommendations-section {
+  grid-area: recommend !important;
+  margin-top: 0 !important;
+  background-color: #07203F !important;
+  border: none !important;
+  border-top: 6px solid #800000 !important;
+}
+
+.recommendations-section h2 {
+  color: #D9AA90 !important;
+}
+
+.recommendation-form {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1rem !important;
+}
+
+.recommendation-form input {
+  grid-column: 1 / 2 !important;
+}
+
+.recommendation-form textarea {
+  grid-column: 1 / 3 !important;
+}
+
+.recommendation-form button {
+  grid-column: 2 / 3 !important;
+  justify-self: end !important;
+}
+
+.recommendation-form input,
+.recommendation-form textarea {
+  background-color: #FFFFFF !important;
+  color: #07203F !important;
+  border: 1px solid #D9AA90 !important;
+}
+
+.recommendation-form button {
+  background-color: #800000 !important;
+  color: #FFFFFF !important;
+}
+
+.recommendation-form button:hover {
+  background-color: #D9AA90 !important;
+  color: #02000D !important;
+}
+
+.portfolio-nav {
+  grid-area: nav !important;
+  border-top: 2px solid #07203F !important;
+  padding-top: 2rem !important;
+}
+
+.portfolio-nav a {
+  background-color: #800000 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #D9AA90 !important;
+}
+
+.portfolio-nav a:hover {
+  background-color: #D9AA90 !important;
+  border-color: #D9AA90 !important;
+  color: #02000D !important;
+}
+
+.qualifications-container {
+  display: grid !important;
+  grid-template-columns: 300px 1fr !important;
+  grid-template-areas:
+    "title title"
+    "resume skills"
+    "resume interests"
+    "resume bottom"
+    "nav nav" !important;
+  gap: 2rem !important;
+  align-items: start !important;
+}
+
+.qualifications-title {
+  grid-area: title !important;
+  text-align: left !important;
+  margin: 0 0 1rem 0 !important;
+  color: var(--color-rust) !important;
+}
+
+.top-section {
+  display: contents !important;
+}
+
+.resume-section {
+  grid-area: resume !important;
+  width: auto !important;
+  position: sticky !important;
+  top: 1rem !important;
+}
+
+.resume-section h2,
+.skills-section h2,
+.interests-section h2,
+.certifications-section h2,
+.awards-section h2 {
+  color: var(--color-rust) !important;
+}
+
+.resume-section img {
+  border: 2px solid var(--color-navy) !important;
+}
+
+.skills-section {
+  grid-area: skills !important;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.skill-box {
+  background-color: var(--color-tan) !important;
+  border: 2px solid var(--color-navy) !important;
+}
+
+.skill-box li {
+  color: #FFFFFF !important;
+}
+
+.interests-section {
+  grid-area: interests !important;
+  margin-top: 0 !important;
+  background-color: var(--color-tan) !important;
+  border-left: 6px solid var(--color-rust) !important;
+}
+
+.interest-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.interest-card:first-child {
+  grid-column: span 2 !important;
+}
+
+.interest-card {
+  background-color: #07203F !important;
+  border: 2px solid var(--color-navy) !important;
+}
+
+.interest-card h3 {
+  color: var(--color-rust) !important;
+}
+
+.interest-card p {
+  color: #FFFFFF !important;
+}
+
+.bottom-sections {
+  grid-area: bottom !important;
+  grid-template-columns: 45% 55% !important;
+}
+
+.awards-section {
+  order: -1 !important;
+}
+
+.certification-grid,
+.awards-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+.certifications-section,
+.awards-section {
+  background-color: var(--color-tan) !important;
+  border: 2px solid var(--color-navy) !important;
+}
+
+.star {
+  background-color: var(--color-rust) !important;
+  color: #02000D !important;
+}
+
+.award p {
+  color: var(--color-navy) !important;
+}
+
+.site-nav {
+  grid-area: nav !important;
+}
 
 .activities-page {
   max-width: 1200px;
@@ -79,7 +475,6 @@ body {
   margin-bottom: 1.25rem;
 }
 
-
 .section-title {
   text-align: left;
   color: #FFFFFF !important;
@@ -140,8 +535,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Sidebar */
-
 .sidebar-section {
   background-color: #800000;
   border: none;
@@ -169,12 +562,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.hobbies-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .hobbies-list li {
   color: #07203F !important;
   margin-bottom: 1rem;
@@ -186,8 +573,6 @@ body {
   line-height: 1.8;
   font-size: 0.95rem;
 }
-
-/* Navigation */
 
 .activities-nav {
   justify-content: flex-start;
@@ -213,28 +598,85 @@ body {
   color: #02000D !important;
 }
 
-/* Toggle Button */
+@media (max-width: 850px) {
 
-.toggle-button {
-  display: block;
-  margin: 1.5rem 0 1.5rem auto;
-  padding: 0.75rem 1.4rem;
-  background-color: #800000;
-  color: #FFFFFF !important;
-  border: 2px solid #D9AA90;
-  border-radius: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  .home-page {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "title"
+      "photo"
+      "resume"
+      "bio"
+      "roles"
+      "highlights"
+      "nav" !important;
+  }
+
+  .portfolio-page {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "title"
+      "recommend"
+      "social"
+      "projects"
+      "nav" !important;
+  }
+
+  .qualifications-container {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "title"
+      "resume"
+      "skills"
+      "interests"
+      "bottom"
+      "nav" !important;
+  }
+
+  .resume-section {
+    position: static !important;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .interest-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .interest-card:first-child {
+    grid-column: span 1 !important;
+  }
+
+  .bottom-sections {
+    grid-template-columns: 1fr !important;
+  }
+
 }
 
-.toggle-button:hover {
-  background-color: #D9AA90;
-  color: #02000D !important;
-}
+@media (max-width: 650px) {
 
-/* Responsive Layout */
+  .project-card:first-child {
+    grid-column: span 1 !important;
+  }
+
+  .recommendation-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .recommendation-form input,
+  .recommendation-form textarea,
+  .recommendation-form button {
+    grid-column: 1 / 2 !important;
+    justify-self: stretch !important;
+  }
+
+}
 
 @media (max-width: 900px) {
 
