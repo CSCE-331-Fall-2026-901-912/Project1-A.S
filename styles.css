@@ -57,7 +57,6 @@ p  { font-size: 1rem; }
   background-color: var(--color-rust);
 }
 
-/* Navigation row shared across all pages */
 .site-nav {
   display: flex;
   justify-content: center;
@@ -81,7 +80,6 @@ p  { font-size: 1rem; }
   background-color: var(--color-rust);
 }
 
-/* Outlined boxes used for Previous Roles, Portfolio Highlights, etc. */
 .info-box {
   border: 2px solid var(--color-navy);
   display: inline-block;
@@ -99,7 +97,6 @@ p  { font-size: 1rem; }
   margin-bottom: 4px;
 }
 
-/* Favorite productivity apps grid (used on Sandbox) */
 .app-grid {
   display: flex;
   flex-wrap: wrap;

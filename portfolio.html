@@ -1,9 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
 <html>
 
 <head>
-
+<title>Portfolio - Aparna Subramaniam</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,528 +11,313 @@
 
 <link id="style-sheet" rel="stylesheet" href="light.css">
 <script src="functions.js"></script>
-<button id="style-toggle" class="toggle-button" onclick="toggleStyle()">Switch to Dark</button>
+
+<button id="style-toggle" class="toggle-button" onclick="toggleStyle()">Switch to Dark Style</button>
 
 <style>
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.portfolio-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .portfolio-title {
-    color: #FFFFFF !important;
+  text-align: center;
+  color: #FFFFFF !important;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  margin-bottom: 2.5rem;
 }
 
-.project-row {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1.5rem;
-    width: 100%;
-    margin-top: 2rem;
+.projects-section {
+  width: 100%;
 }
 
-.project-tile {
-    flex: 1;
-    min-width: 0;
-    text-align: center;
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 330px;
+  background-color: #ffffff;
+  border: 2px solid #07203F;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-card h3 {
+  color: #07203F;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: #07203F;
+  line-height: 1.6;
 }
 
 .project-button {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    min-height: 110px;
-    padding: 20px;
+    align-items: center;
+    min-height: 90px;
+    margin-bottom: 1rem;
+    padding: 1rem;
     background-color: #07203F;
-    color: #FFFFFF;
-    border: 2px solid #07203F;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-    transition: background-color 0.15s ease,
-                border-color 0.15s ease;
-}
-
-.project-button:hover {
+    color: #FFFFFF !important;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-weight: 700;
+    transition: background-color 0.15s ease;
+  }
+  
+  .project-button:hover {
     background-color: #800000;
-    border-color: #800000;
+    color: #FFFFFF !important;
+  }
+
+.social-section {
+  margin-top: 3rem;
+  text-align: center;
 }
 
-.project-description {
-    margin-top: 12px;
-    padding: 14px;
-    min-height: 130px;
-    background-color: #EBDED4;
-    border: 1px solid #D9AA90;
-    color: #07203F;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    text-align: left;
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.contact-row {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+.social-buttons a {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  background-color: #07203F;
+  color: #FFFFFF;
+  border: 2px solid #07203F;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.contact-button {
-    flex: 1;
-    min-height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 15px 20px;
-    background-color: #07203F;
-    color: #FFFFFF;
-    border: 2px solid #07203F;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
-    transition: background-color 0.15s ease,
-                border-color 0.15s ease;
-}
-
-.contact-button:hover {
-    background-color: #800000;
-    border-color: #800000;
-}
-
-.contact-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.github-logo {
-    width: 28px;
-    height: 28px;
+.social-buttons a:hover {
+  background-color: #800000;
+  border-color: #800000;
 }
 
 .recommendations-section {
-    width: 100%;
-    margin-top: 3rem;
-    padding: 25px;
-    background-color: #EBDED4;
-    border: 2px solid #07203F;
-    border-radius: 6px;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #07203F;
 }
 
-.recommendations-title {
-    text-align: center;
-    color: #800000;
-    margin-bottom: 20px;
-}
-
-.recommendations-row {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+.recommendations-section h2 {
+  color: #800000;
+  text-align: center;
 }
 
 .recommendation-form {
-    flex: 1;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border: 1px solid #D9AA90;
-}
-
-.recommendation-display {
-    flex: 1;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border: 1px solid #D9AA90;
-}
-
-.recommendation-subtitle {
-    color: #07203F;
-    font-size: 1.15rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.recommendation-form label {
-    display: block;
-    color: #07203F;
-    font-weight: 600;
-    margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .recommendation-form input,
 .recommendation-form textarea {
-    width: 100%;
-    padding: 9px;
-    margin-bottom: 15px;
-    border: 1px solid #D9AA90;
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: #07203F;
-    background-color: #FFFFFF;
+  padding: 0.75rem;
+  font-family: inherit;
+  border: 1px solid #07203F;
 }
 
-.recommendation-form textarea {
-    min-height: 120px;
-    resize: vertical;
+.recommendation-form button {
+  padding: 0.7rem 1.5rem;
+  background-color: #07203F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.recommendation-submit {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #07203F;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
+.recommendation-form button:hover {
+  background-color: #800000;
 }
 
-.recommendation-submit:hover {
-    background-color: #800000;
+.portfolio-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  padding: 2rem 0 2.5rem;
 }
 
-.linkedin-recommendation {
-    padding: 15px;
-    border-left: 4px solid #800000;
-    background-color: #EBDED4;
-    margin-bottom: 15px;
+.portfolio-nav a {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  background-color: #07203F;
+  color: #FFFFFF !important;
+  border: 2px solid #07203F;
+  border-radius: 6px;
+  text-decoration: none !important;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
-.linkedin-recommendation-name {
-    color: #800000;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.linkedin-recommendation-text {
-    color: #07203F;
-    line-height: 1.5;
+.portfolio-nav a:hover {
+  background-color: #800000;
+  border-color: #800000;
+  color: #FFFFFF !important;
 }
 
 @media (max-width: 700px) {
 
-    .project-row {
-        flex-direction: column;
-        align-items: center;
-    }
+  .portfolio-nav {
+    flex-direction: column;
+  }
 
-    .project-tile {
-        width: 100%;
-    }
-
-    .contact-row {
-        flex-direction: column;
-    }
-
-    .contact-button {
-        width: 100%;
-    }
-
-    .recommendations-row {
-        flex-direction: column;
-    }
-
-    .recommendation-form,
-    .recommendation-display {
-        width: 100%;
-    }
+  .portfolio-nav a {
+    width: 200px;
+    text-align: center;
+  }
 
 }
 
 </style>
-
 </head>
 
-<div class="container">
+<body>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<div class="portfolio-page">
 
-    <tr>
+  <h2 class="portfolio-title">Portfolio</h2>
 
-        <td align="center">
+  <section class="projects-section">
 
-            <h2 class="portfolio-title">
-                Portfolio
-            </h2>
+    <div class="projects-container">
 
-        </td>
+      <div class="project-card">
 
-    </tr>
-
-</table>
-
-<h3 style="
-    text-align: center;
-    color: #800000;
-    margin-top: 2rem;
-">
-    Personal Projects
-</h3>
-
-<div class="project-row">
-
-    <div class="project-tile">
-
-        <a
-            href="https://github.com/Aparna0208"
-            target="_blank"
-            class="project-button"
-            title="View SmartCabin on GitHub"
-        >
-            SmartCabin
+        <a href="#" class="project-button">
+          SmartCabin
         </a>
 
-        <div class="project-description">
+        <p>
+          A React-based passenger service platform designed to allow
+          travelers to submit real-time cabin service requests.
+        </p>
 
-            A React-based passenger service platform developed
-            for the American Airlines challenge at TamuHack.
-            The application allows passengers to submit real-time
-            requests for meals, beverages, accessibility assistance,
-            accessories, and other cabin services.
+      </div>
 
-        </div>
+      <div class="project-card">
+
+        <a href="#" class="project-button">
+          Word Scramble Game
+        </a>
+
+        <p>
+          A Python game using randomized algorithms, string manipulation,
+          input processing, and dictionary data.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <a href="#" class="project-button">
+          Personal Website
+        </a>
+
+        <p>
+          A multi-page personal portfolio website created with HTML, CSS,
+          and JavaScript to showcase my education, experience, projects,
+          and activities.
+        </p>
+
+      </div>
 
     </div>
 
-    <div class="project-tile">
+  </section>
 
-        <a
-            href="https://github.com/Aparna0208"
-            target="_blank"
-            class="project-button"
-            title="View Python Word Scramble Game on GitHub"
-        >
-            Python Word Scramble Game
-        </a>
+  <section class="social-section">
 
-        <div class="project-description">
+    <div class="social-buttons">
 
-            A Python word scramble game using randomized algorithms,
-            string manipulation, user input processing, modular
-            functions, and dictionary-based data.
-
-        </div>
-
-    </div>
-
-    <div class="project-tile">
-
-        <a
-            href="https://github.com/Aparna0208"
-            target="_blank"
-            class="project-button"
-            title="View more projects on GitHub"
-        >
-            More Projects
-        </a>
-
-        <div class="project-description">
-
-            Explore my GitHub profile to view additional programming,
-            software development, and computer science projects.
-
-        </div>
-
-    </div>
-
-</div>
-
-<div class="contact-row">
-
-    <a
-        href="https://github.com/Aparna0208"
-        target="_blank"
-        class="contact-button"
-        title="Visit my GitHub profile"
-    >
-
-        <span class="contact-icon">
-
-            <svg
-                class="github-logo"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-            >
-
-                <path
-                    fill="currentColor"
-                    d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.36 6.84 9.71.5.1.68-.22.68-.49
-                    0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63
-                    1 .08 1.53 1.06 1.53 1.06.89 1.58 2.34 1.12 2.91.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.06
-                    0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.16 9.16 0 0 1 12 7.36c.85 0
-                    1.71.12 2.51.36 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75
-                    0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.24
-                    10.24 0 0 0 22 12.24C22 6.58 17.52 2 12 2z"
-                />
-
-            </svg>
-
-        </span>
-
+      <a href="https://github.com/Aparna0208" target="_blank">
         GitHub
+      </a>
 
-    </a>
-
-    <a
-        href="https://www.linkedin.com/in/aparna-subramaniam-/"
-        target="_blank"
-        class="contact-button"
-        title="Visit my LinkedIn profile"
-    >
-
-        <span class="contact-icon">
-            in
-        </span>
-
+      <a href="https://www.linkedin.com/in/aparna-subramaniam-/" target="_blank">
         LinkedIn
+      </a>
 
-    </a>
-
-    <a
-        href="mailto:saparna06@gmail.com"
-        class="contact-button"
-        title="Email me"
-    >
-
-        <span class="contact-icon">
-            @
-        </span>
-
+      <a href="mailto:saparna06@gmail.com">
         Email
-
-    </a>
-
-</div>
-
-<div class="recommendations-section">
-
-    <h3 class="recommendations-title">
-        Recommendations
-    </h3>
-
-    <div class="recommendations-row">
-
-        <div class="recommendation-form">
-
-            <div class="recommendation-subtitle">
-                Leave a Recommendation
-            </div>
-
-            <form action="#" method="post">
-
-                <label for="recommendation-name">
-                    Name
-                </label>
-
-                <input
-                    type="text"
-                    id="recommendation-name"
-                    name="recommendation-name"
-                    placeholder="Your name"
-                >
-
-                <label for="recommendation-role">
-                    Affiliation / Role
-                </label>
-
-                <input
-                    type="text"
-                    id="recommendation-role"
-                    name="recommendation-role"
-                    placeholder="Your role or organization"
-                >
-
-                <label for="recommendation-message">
-                    Recommendation
-                </label>
-
-                <textarea
-                    id="recommendation-message"
-                    name="recommendation-message"
-                    placeholder="Write a recommendation..."
-                ></textarea>
-
-                <button
-                    type="submit"
-                    class="recommendation-submit"
-                >
-                    Submit Recommendation
-                </button>
-
-            </form>
-
-        </div>
-
-        <div class="recommendation-display">
-
-            <div class="recommendation-subtitle">
-                LinkedIn Recommendations
-            </div>
-
-            <div class="linkedin-recommendation">
-
-                <div class="linkedin-recommendation-name">
-                </div>
-
-                <div class="linkedin-recommendation-text">
-
-                    Recommendations from colleagues, supervisors,
-                    professors, and other professional connections!
-
-                </div>
-
-            </div>
-
-            <a
-                href="https://www.linkedin.com/in/aparna-subramaniam-/"
-                target="_blank"
-                class="button"
-            >
-                View LinkedIn Profile
-            </a>
-
-        </div>
+      </a>
 
     </div>
 
-</div>
+  </section>
 
-<nav class="site-nav">
+  <section class="recommendations-section">
 
-    <a href="index.html">
-        Home
-    </a>
+    <h2>Recommendations</h2>
 
-    <a href="portfolio.html">
-        Portfolio
-    </a>
+    <form class="recommendation-form">
 
-    <a href="qualifications.html">
-        Qualifications
-    </a>
+      <input
+        type="text"
+        placeholder="Your name"
+      >
 
-    <a href="activities.html">
-        Activities
-    </a>
+      <textarea
+        rows="5"
+        placeholder="Write a recommendation..."
+      ></textarea>
 
-    <a href="sandbox.html">
-        Sandbox
-    </a>
+      <button type="submit">
+        Submit Recommendation
+      </button>
 
-</nav>
+    </form>
+
+  </section>
+
+  <nav class="portfolio-nav">
+
+    <a href="index.html">Home</a>
+
+    <a href="portfolio.html">Portfolio</a>
+
+    <a href="qualifications.html">Qualifications</a>
+
+    <a href="activities.html">Activities</a>
+
+    <a href="sandbox.html">Sandbox</a>
+
+  </nav>
 
 </div>
 
 <script>
-    loadStyle();
+  loadStyle();
 </script>
 
+</body>
 </html>

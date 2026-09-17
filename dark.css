@@ -1,210 +1,301 @@
-:root {
-  --color-dark: #02000D;
-  --color-navy: #07203F;
-  --color-cream: #EBDED4;
-  --color-tan: #D9AA90;
-  --color-rust: #800000;
-}
-
 body {
   background-color: #02000D;
-  color: #EBDED4;
-}
-body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  background-color: #02000D;
-  color: #EBDED4;
-}
-.container {
-  background-color: #02000D;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li {
-  color: #EBDED4;
-}
-
-a {
-  color: #D9AA90;
-}
-
-a:hover {
-  color: #EBDED4;
-}
-
-
-.site-nav {
-  background-color: #02000D;
-}
-
-.site-nav a {
-  background-color: #07203F;
-  color: #EBDED4;
-  border: 1px solid #D9AA90;
-}
-
-.site-nav a:hover {
-  background-color: #800000;
   color: #FFFFFF;
 }
 
+/* Main Page */
 
-.button {
+.activities-page {
+  max-width: 1200px;
+  background-color: #02000D;
+  padding: 0 2rem;
+}
+
+.activities-title {
+  text-align: left;
+  color: #FFFFFF !important;
+  font-size: 3rem;
+  letter-spacing: 0.08rem;
+  border-left: 8px solid #D9AA90;
+  padding-left: 1.5rem;
+  margin: 3rem 0;
+}
+
+.activities-layout {
+  display: grid !important;
+  grid-template-columns: 1fr 300px;
+  grid-template-areas:
+    "passion sidebar"
+    "leadership leadership";
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.activities-main {
+  display: contents;
+}
+
+.leadership-section {
+  grid-area: leadership;
+  order: 3;
+}
+
+.activities-sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: auto;
+  order: 2;
+}
+
+.passion-section {
+  grid-area: passion;
   background-color: #07203F;
-  color: #EBDED4;
-  border: 1px solid #D9AA90;
+  border: none;
+  border-top: 8px solid #800000;
+  border-radius: 0 35px 0 35px;
+  padding: 2.5rem;
+  margin: 0;
+  min-height: 330px;
+  order: 1;
 }
 
-.button:hover {
+.passion-section h2 {
+  color: #07203F !important;
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.passion-section ul {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.passion-section li {
+  color: #D9AA90 !important;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+
+.section-title {
+  text-align: left;
+  color: #FFFFFF !important;
+  font-size: 2.2rem;
+  border-bottom: 2px solid #800000;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.leadership-item {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 2rem;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-left: 6px solid #D9AA90;
+  border-radius: 0;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  min-height: 190px;
+}
+
+.leadership-item:nth-of-type(odd) {
+  background-color: #FFFFFF;
+}
+
+.leadership-item:nth-of-type(even) {
+  background-color: #FFFFFF;
+  border-left-color: #800000;
+}
+
+.club-thumbnail {
+  width: 190px;
+  height: 170px;
+  object-fit: cover;
+  border: 3px solid #D9AA90;
+  border-radius: 50% 10% 50% 10%;
+}
+
+.leadership-description h3 {
+  color: #FFFFFF !important;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.leadership-description h4 {
+  color: #D9AA90 !important;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1rem;
+}
+
+.leadership-description p {
+  color: #07203F !important;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Sidebar */
+
+.sidebar-section {
   background-color: #800000;
-  color: #FFFFFF;
+  border: none;
+  border-right: 6px solid #800000;
+  border-radius: 25px 0 25px 0;
+  padding: 2rem 1.25rem;
+  margin: 0;
+  text-align: center;
 }
 
+.hobbies-section {
+  min-height: 250px;
+  border-right-color: #D9AA90;
+  border-radius: 50% 0 50% 0;
+}
+
+.career-section {
+  min-height: 280px;
+}
+
+.sidebar-section h2 {
+  color: #D9AA90 !important;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.hobbies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hobbies-list li {
+  color: #07203F !important;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.career-section p {
+  color: #07203F !important;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Navigation */
+
+.activities-nav {
+  justify-content: flex-start;
+  border-top: 2px solid #07203F;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.activities-nav a {
+  background-color: #800000;
+  color: #07203F !important;
+  border: 2px solid #D9AA90;
+  border-radius: 0;
+  padding: 0.8rem 1.4rem;
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.activities-nav a:hover {
+  background-color: #D9AA90;
+  border-color: #D9AA90;
+  color: #02000D !important;
+}
+
+/* Toggle Button */
 
 .toggle-button {
   display: block;
-  margin: 1rem auto;
-  padding: 0.65rem 1.25rem;
-  background-color: #D9AA90;
-  color: #07203F;
+  margin: 1.5rem 0 1.5rem auto;
+  padding: 0.75rem 1.4rem;
+  background-color: #800000;
+  color: #FFFFFF !important;
   border: 2px solid #D9AA90;
-  border-radius: 20px;
+  border-radius: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
   cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .toggle-button:hover {
-  background-color: #800000;
-  border-color: #D9AA90;
-  color: #FFFFFF;
-}
-
-.info-box {
   background-color: #D9AA90;
-  color: #07203F;
-  border: 2px solid #D9AA90;
+  color: #02000D !important;
 }
 
-.info-box p,
-.info-box li,
-.info-box span {
-  color: #07203F;
+/* Responsive Layout */
+
+@media (max-width: 900px) {
+
+  .activities-layout {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "passion"
+      "sidebar"
+      "leadership";
+  }
+
+  .activities-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
+@media (max-width: 650px) {
 
-.resume-preview {
-  background-color: #07203F;
+  .activities-sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leadership-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .club-thumbnail {
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .activities-title {
+    font-size: 2.3rem;
+  }
+
+  .passion-section {
+    padding: 1.5rem;
+  }
+
 }
 
-.resume-preview img {
-  border: 1px solid #D9AA90;
-}
+@media (max-width: 500px) {
 
+  .activities-page {
+    padding: 0 1rem;
+  }
 
-.skill-box,
-.skills-box,
-.card,
-.project-card,
-.activity-card,
-.certification-card,
-.award-card,
-.interest-card {
-  background-color: #D9AA90 !important;
-  color: #07203F !important;
-  border-color: #D9AA90 !important;
-}
+  .activities-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
+  .activities-nav a {
+    text-align: center;
+  }
 
-.skill-box *,
-.skills-box *,
-.card *,
-.project-card *,
-.activity-card *,
-.certification-card *,
-.award-card *,
-.interest-card * {
-  color: #07203F !important;
-}
-
-
-.star {
-  background-color: #800000 !important;
-  color: #EBDED4 !important;
-}
-
-.star span {
-  color: #EBDED4 !important;
-}
-
-
-form {
-  background-color: #07203F;
-  color: #EBDED4;
-}
-
-input,
-textarea {
-  background-color: #EBDED4;
-  color: #07203F;
-  border: 1px solid #D9AA90;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #07203F;
-}
-
-
-section h1,
-section h2,
-section h3,
-section h4 {
-  color: #D9AA90;
-}
-
-
-.dark-section {
-  background-color: #02000D;
-  color: #EBDED4;
-}
-
-.dark-section p,
-.dark-section li {
-  color: #EBDED4;
-}
-
-
-.hobbies,
-.hobbies-container,
-.career-goals {
-  background-color: #07203F !important;
-  color: #EBDED4 !important;
-  border-color: #D9AA90 !important;
-}
-
-.hobbies *,
-.hobbies-container *,
-.career-goals * {
-  color: #EBDED4 !important;
-}
-
-.project,
-.project-box {
-  background-color: #D9AA90 !important;
-  color: #07203F !important;
-  border-color: #D9AA90 !important;
-}
-
-.project *,
-.project-box * {
-  color: #07203F !important;
 }

@@ -1,199 +1,263 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-<title>Aparna Subramaniam</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Home - Aparna Subramaniam</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link id="style-sheet" rel="stylesheet" href="light.css">
 <script src="functions.js"></script>
-<button id="style-toggle" class="toggle-button" onclick="toggleStyle()">Switch to Dark</button>
+
+<button id="style-toggle" class="toggle-button" onclick="toggleStyle()">Switch to Dark Style</button>
+
 <style>
-.landing-layout {
-  display: grid;
-  grid-template-columns: 42% 58%;
-  gap: 0;
-  align-items: stretch;
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.landing-photo {
+.home-page {
   width: 100%;
-  height: 100%;
-  min-height: 700px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.landing-right {
-  padding-left: 1rem;
+.home-title {
+  text-align: center;
+  color: #FFFFFF !important;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
 }
 
-.landing-intro {
-  background-color: #ffffff;
-  border-left: 6px solid var(--color-rust);
-  padding: 1.25rem 1.5rem;
+.home-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.home-left {
+  flex: 1;
+  text-align: center;
+}
+
+.home-left img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid #07203F;
+}
+
+.home-right {
+  flex: 1;
+}
+
+.home-right img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.bio-text {
+  color: #FFFFFF !important;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.home-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  padding: 2rem 0 2.5rem;
+}
+
+.home-nav a {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  background-color: #07203F;
+  color: #FFFFFF !important;
+  border: 2px solid #07203F;
+  border-radius: 6px;
+  text-decoration: none !important;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.home-nav a:hover {
+  background-color: #800000;
+  border-color: #800000;
+  color: #FFFFFF !important;
+}
+
+@media (max-width: 700px) {
+
+  .home-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-left,
+  .home-right {
+    width: 100%;
+  }
+
+  .home-nav {
+    flex-direction: column;
+  }
+
+  .home-nav a {
+    width: 200px;
+    text-align: center;
+  }
+
+}
+.previous-roles,
+.portfolio-highlights {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background-color: #D6C2B5;
+  border: 2px solid #07203F;
+}
+
+.previous-roles h2,
+.portfolio-highlights h2 {
+  color: #07203F !important;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
-}
-
-.landing-intro p {
-  margin: 0;
-  font-size: 1.05rem;
-}
-
-.previous-roles {
-  background-color: var(--color-tan);
-  padding: 0.5rem 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.previous-roles h2 {
-  padding: 0;
-  margin-bottom: 0.25rem;
-  font-size: 1.25rem;
-  color: #000000;
 }
 
 .previous-roles ul {
-  margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
 }
 
 .previous-roles li {
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
+  color: #07203F !important;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
-.landing-resume {
-  border: 2px solid var(--color-navy);
-  padding: 1rem;
-  text-align: center;
-}
-
-.landing-resume h2 {
-  padding: 0;
+.portfolio-highlights p {
+  color: #07203F !important;
+  line-height: 1.7;
   margin-bottom: 1rem;
-  color: var(--color-rust);
-  font-size: 1.3rem;
 }
 
-.landing-resume img {
-  width: 100%;
-  max-width: 650px;
-  height: auto;
-  border: 2px solid var(--color-navy);
-  display: block;
-  margin: 0 auto;
-}
-
-.highlights {
-  margin-top: 2rem;
-  padding: 1rem 0;
-}
-
-.highlights h2 {
-  padding: 0;
-  color: var(--color-rust);
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.highlights p {
-  font-size: 1.05rem;
-}
-
-@media (max-width: 800px) {
-  .landing-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .landing-photo {
-    min-height: 500px;
-  }
-
-  .landing-right {
-    padding-left: 0;
-  }
+.portfolio-highlights strong {
+  color: #800000 !important;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="home-page">
 
-  <h1>Aparna Subramaniam</h1>
+  <h1 class="home-title">Aparna Subramaniam</h1>
 
-  <div class="landing-layout">
+  <div class="home-layout">
 
-    <div>
-      <img src="profile.jpg" alt="Aparna Subramaniam" class="landing-photo">
+    <div class="home-left">
+
+      <img
+        src="profile.jpg"
+        alt="Aparna Subramaniam"
+      >
+
     </div>
 
-    <div class="landing-right">
+    <div class="home-right">
 
-      <div class="landing-intro">
-        <p>
-          Hi! I am Aparna Subramaniam. I am a junior at Texas A&M University
-          majoring in Computer Science, minoring in Cybersecurity. My ambition
-          is to work in the field of Computer Science & Information Technology,
-          and I am seeking valuable opportunities to discover more and develop
-          experience as an individual who is eager to enter the world of modern
-          technology.
-        </p>
-      </div>
+      <img
+        src="resume.png"
+        alt="Resume preview"
+      >
 
-      <div class="previous-roles">
-        <h2>Previous Roles & Experience</h2>
-        <ul>
-          <li>AI & Software Intern @ True Rise Foundation</li>
-          <li>Student Worker - Applied Cybersecurity @ Texas A&M Engineering Extension Services (TEEX)</li>
-          <li>Student Technician @ Energy Systems Lab (TEES)</li>
-        </ul>
-      </div>
-
-      <div class="landing-resume">
-        <h2>My Resume</h2>
-        <a href="resume.png" target="_blank">
-          <img src="resume.png" alt="Aparna Subramaniam Resume">
-        </a>
-      </div>
+      <p class="bio-text">
+        Hi, I'm Aparna Subramaniam! I am a Computer Science student at Texas A&M University with an
+        interest in artificial intelligence, software development, and
+        cybersecurity. I enjoy learning how technology can be used to solve
+        problems and create useful experiences for people. Through coursework,
+        projects, internships, and student organizations, I continue to build
+        my technical and collaborative skills while exploring different areas
+        of computer science.
+      </p>
 
     </div>
 
   </div>
+  <section class="previous-roles">
 
-  <div class="highlights">
+    <h2>Previous Roles & Experience</h2>
+  
+    <ul>
+      <li>
+        AI & Software Intern @ True Rise Foundation
+      </li>
+  
+      <li>
+        Student Worker - Applied Cybersecurity @ Texas A&M Engineering
+        Extension Services (TEEX)
+      </li>
+  
+      <li>
+        Student Technician @ Energy Systems Lab (TEES)
+      </li>
+    </ul>
+  
+  </section>
+  
+  <section class="portfolio-highlights">
+  
     <h2>Portfolio Highlights</h2>
-
+  
     <p>
-      <strong>AI & Software Development</strong> -
-      Develop AI-assisted applications using modern programming practices,
-      prompt engineering techniques, and secure coding principles.
+      <strong>AI & Software Development</strong> - Develop AI-assisted
+      applications using modern programming practices, prompt engineering
+      techniques, and secure coding principles.
     </p>
-
+  
     <p>
-      <strong>Computer Science & Technology</strong> -
-      Explore software development, computer systems, cybersecurity,
-      and emerging technologies through academic and personal projects.
+      <strong>Computer Science & Technology</strong> - Explore software
+      development, computer systems, cybersecurity, and emerging technologies
+      through academic and personal projects.
     </p>
-
+  
     <p>
-      <strong>Projects & Innovation</strong> -
-      Build practical technology solutions while developing programming,
-      problem-solving, collaboration, and technical communication skills.
+      <strong>Projects & Innovation</strong> - Build practical technology
+      solutions while developing programming, problem-solving, collaboration,
+      and technical communication skills.
     </p>
-  </div>
+  
+  </section>
+  <nav class="home-nav">
 
-  <nav class="site-nav">
     <a href="index.html">Home</a>
+
     <a href="portfolio.html">Portfolio</a>
+
     <a href="qualifications.html">Qualifications</a>
+
     <a href="activities.html">Activities</a>
+
     <a href="sandbox.html">Sandbox</a>
+
   </nav>
 
 </div>
+
 <script>
   loadStyle();
-  </script>
+</script>
+
 </body>
 </html>

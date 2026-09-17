@@ -5,10 +5,18 @@
 <title>Activities - Aparna Subramaniam</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link id="style-sheet" rel="stylesheet" href="light.css">
 <script src="functions.js"></script>
-<button id="style-toggle" class="toggle-button" onclick="toggleStyle()">Switch to Dark</button>
+
 <style>
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 
 .activities-page {
   width: 100%;
@@ -19,7 +27,7 @@
 
 .activities-title {
   text-align: center;
-  color: #07203F;
+  color: #FFFFFF !important;
   font-size: 2.5rem;
   padding-top: 3rem;
   margin-bottom: 2.5rem;
@@ -41,7 +49,7 @@
 }
 
 .section-title {
-  color: #07203F;
+  color: #FFFFFF !important;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -76,13 +84,13 @@
 }
 
 .leadership-description h3 {
-  color: #800000;
+  color: #07203F !important;
   font-size: 1.35rem;
   margin-bottom: 0.75rem;
 }
 
 .leadership-description h4 {
-  color: #07203F;
+  color: #07203F !important;
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -154,10 +162,11 @@
 
 .passion-section ul {
   padding-left: 1.5rem;
-  color: #07203F;
+  color: #800000 !important;
 }
 
 .passion-section li {
+  color: #800000 !important;
   margin-bottom: 0.75rem;
   line-height: 1.6;
 }
@@ -176,17 +185,21 @@
 
 .activities-nav a {
   display: inline-block;
-  padding: 0.6rem 1.5rem;
+  padding: 0.65rem 1.5rem;
   background-color: #07203F;
-  color: #ffffff;
-  border-radius: 4px;
-  text-decoration: none;
+  color: #FFFFFF !important;
+  border: 2px solid #07203F;
+  border-radius: 6px;
+  text-decoration: none !important;
   font-weight: 600;
-  transition: background-color 0.15s ease;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .activities-nav a:hover {
   background-color: #800000;
+  border-color: #800000;
+  color: #FFFFFF !important;
 }
 
 @media (max-width: 850px) {
@@ -244,6 +257,10 @@
 
 <body>
 
+<button id="style-toggle" class="toggle-button" onclick="toggleStyle()">
+  Switch to Dark Style
+</button>
+
 <div class="activities-page">
 
   <h1 class="activities-title">Activities</h1>
@@ -296,8 +313,11 @@
             <h4>True Rise Foundation</h4>
 
             <p>
-              Support AI and software development projects by using prompt engineering, AI-assisted development, and secure coding practices. Collaborate with team
-              members through Git and GitHub, contribute to application development, and explore ways to use emerging AI technologies to improve software solutions.
+              Support AI and software development projects by using prompt
+              engineering, AI-assisted development, and secure coding practices.
+              Collaborate with team members through Git and GitHub, contribute
+              to application development, and explore ways to use emerging AI
+              technologies to improve software solutions.
             </p>
 
           </div>
@@ -342,7 +362,7 @@
 
           <li>Dance</li>
           <li>Music</li>
-          <li>Travel & Sightseeing </li>
+          <li>Travel & Sightseeing</li>
           <li>Photography</li>
 
         </ul>
@@ -370,20 +390,18 @@
   <nav class="activities-nav">
 
     <a href="index.html">Home</a>
-
     <a href="portfolio.html">Portfolio</a>
-
     <a href="qualifications.html">Qualifications</a>
-
     <a href="activities.html">Activities</a>
-
     <a href="sandbox.html">Sandbox</a>
 
   </nav>
 
 </div>
+
 <script>
   loadStyle();
-  </script>
+</script>
+
 </body>
 </html>
